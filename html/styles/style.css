@@ -1,0 +1,67 @@
+.custom-header {
+    background-color: #780000;
+    color: #F0C415;
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    top: 0;
+    left: 0;
+}
+
+main {
+    margin-top: 100px; /* Garante que o conteúdo não fique oculto pelo header */
+    padding: 80px;
+}
+
+.custom-body {
+    background-color: white; 
+}
+
+/* Remove a formatação das abas */
+.nav-tabs .nav-link {
+    border: none !important;
+    background-color: transparent !important;
+    color: #780000 !important; /* Cor do texto padrão */
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #780000 !important; /* Cor ao passar o mouse */
+}
+
+.nav-tabs .nav-link.active {
+    color: #780000 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #780000 !important; /*Linha inferior para destacar a aba ativa */
+}
+
+/* Remove a linha branca padrão das abas */
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.custom-card {
+    background-color: white; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 500px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a caixa */
+}
+
+/* Responsividade para a seção Sobre Mim */
+@media (max-width: 768px) {
+    .sobre-mim {
+        width: 100%;
+    }
+}
+
+/* Ajuste nas imagens para ficarem responsivas */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-card a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor padrão do texto */
+}
