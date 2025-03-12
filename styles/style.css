@@ -1,6 +1,10 @@
 .custom-header {
     color: #F0C415;
     background-color: #780000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .custom-body {
